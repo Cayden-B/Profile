@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+#heading1 {
+    text-align: center;
+    padding: 20px;
+    background-color: tomato;
+    color: white;
+    font-size: 30px;}
+
+
+P {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: wheat;
+    }
+
+li {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        list-style: none;
+    }
+
+#divbox {
+    background-color:blue;
+    width:700px;
+    height: 140px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    left: 36%;
+}
+    
+    /* "id=" uses "#___{}", "class=" uses ".____{}" and tags like <h1> use */
