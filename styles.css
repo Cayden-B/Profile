@@ -13,23 +13,42 @@
 
 
 P {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: wheat;
-    }
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: wheat;
+}
 
 li {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         list-style: none;
     }
 
-#divbox {
-    background-color:blue;
-    width:700px;
-    height: 140px;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    position: relative;
-    left: 36%;
-}
+.container-1{
+    display: flex;
+    align-items:baseline;
     
+}
+
+.container-1 div{
+    border:1px #ccc solid;
+    padding:10px
+}
+
+.divbox1 {
+    background-color:blue;
+    flex: 1;
+}
+
+.divbox2{
+    flex: 1;
+    background-color: black;
+}
+
+.divbox3{
+    flex: 1;
+    background-color: black;
+}
+
+h2{
+    text-align: center;
+}
     /* "id=" uses "#___{}", "class=" uses ".____{}" and tags like <h1> use */
