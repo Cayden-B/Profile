@@ -6,17 +6,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cayden's profile</title>
         <link rel="stylesheet" href="styles.css"/>
+        <script src="script.js" defer></script>
+        <script src="https://kit.fontawesome.com/47d10f715f.js" crossorigin="anonymous"></script>
     </head>
-    <body  style="background-color:teal;color:white">
+
+
+
+
+
+    <body  style="background-color:rgb(3, 58, 80);color:rgb(255, 255, 255)">
             <h1 id="heading1">Cayden Byrne</h1>
+        <div id="header2">
             <h2><b>Software engineer</b></h2>
-            <button class="favorite styled" type=button>HTML</button>
-            <button class="favorite styled" type=button>CSS</button>
-            <button class="favorite styled" type=button>Javascript</button>
-            <a href="https://github.com/Cayden-B" button class="favorite styled" type=button>github</button> </a>
-            <a href='https://www.linkedin.com/in/cayden-byrne-297107227' button class="favorite styled" type=button>Linkedin</button> </a>
+                 <button id="button2" onclick="goGithub()"> <i class="fab fa-github"></i></button>
+            <button id="button1" onclick="goLinkd()"> <i class='fab fa-linkedin'> </i></button>
+        </div>
+
+      
+            
             <hr>
-            <marquee behaviour="scroll" direction="right" scrollamount="30">Look at all this information on me</marquee>
+            <marquee behaviour="scroll" direction="right" scrollamount="20">Look at all this information on me</marquee>
             <hr>
     <div class="container-1">            
         <div class="divbox1">    
@@ -38,7 +47,10 @@
             <h3>Summary</h3>
             <p>I am a 21 year old based in Halifax,West Yorkshire I am currently attending Generation.UK's tech talent 6 week programme
         </div>
-    </div>   
+    </div> 
+    
+    
+
 </html>
 
 

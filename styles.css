@@ -6,10 +6,18 @@
 
 #heading1 {
     text-align: center;
-    padding: 20px;
-    background-color: tomato;
+    padding: 10px;
+    background-color: gray;
     color: white;
-    font-size: 30px;}
+    font-size: 30px;
+}
+
+#header2{
+    height: auto;
+    background-color: black;
+    width: auto;
+
+}
 
 
 P {
@@ -23,7 +31,7 @@ li {
     }
 
 .container-1{
-    display: flex;
+    display:flex;
     align-items:baseline;
     
 }
@@ -34,7 +42,7 @@ li {
 }
 
 .divbox1 {
-    background-color:blue;
+    background-color:black;
     flex: 1;
 }
 
@@ -50,5 +58,24 @@ li {
 
 h2{
     text-align: center;
+}
+
+#button1{
+    height: 25px;
+    width: 25px;
+    /* box-shadow: 5px 10px black; */
+    position:fixed;
+    margin-left: 50px;
+    top: 57px;
+}
+
+#button2{
+    height: 25px;
+    width: 25px;
+    /* box-shadow: 5px 10px black; */
+    position:fixed;
+    margin-left: 25px;
+    top:57px;
+    
 }
     /* "id=" uses "#___{}", "class=" uses ".____{}" and tags like <h1> use */
