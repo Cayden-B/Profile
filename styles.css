@@ -3,79 +3,127 @@
     padding: 0px;
     margin: 0px;
 }
-
-#heading1 {
-    text-align: center;
-    padding: 10px;
-    background-color: gray;
-    color: white;
-    font-size: 30px;
+/* navbar============================ */
+.logo{
+    margin-left: 50%;
+    font-family: 'Source Code Pro', monospace;
 }
 
-#header2{
-    height: auto;
-    background-color: black;
-    width: auto;
-
+.linkdBtn{
+    width: 100px;
+    height: 100px;
 }
 
-
-P {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: wheat;
+body{
+    margin: 0;
+    padding: 0;
+    background: #232323;
+    color: #cdcdcd;
+    font-family: "Avenir Next", "Avenir", sans-serif;
+}
+/* burger */
+#menuToggle{
+    display: block;
+    position: relative;
+    top: 30px;
+    left: 50px;
+    z-index: 1;
 }
 
-li {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        list-style: none;
+#menuToggle a{
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s ease;
     }
-
-.container-1{
-    display:flex;
-    align-items:baseline;
-    
+    #menuToggle a:hover
+    {
+    color: tomato;
 }
 
-.container-1 div{
-    border:1px #ccc solid;
-    padding:10px
+
+#menuToggle input{
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2; 
+
+    -webkit-touch-callout: none;
 }
 
-.divbox1 {
-    background-color:black;
-    flex: 1;
+#menuToggle span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
 }
 
-.divbox2{
-    flex: 1;
-    background-color: black;
+#menuToggle span:first-child{
+    transform-origin: 0% 0%;
 }
 
-.divbox3{
-    flex: 1;
-    background-color: black;
+#menuToggle span:nth-last-child(2){
+    transform-origin: 0% 100%;
 }
 
-h2{
-    text-align: center;
+/* 
+* crossmark
+*/
+#menuToggle input:checked ~ span{
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
 }
 
-#button1{
-    height: 25px;
-    width: 25px;
-    /* box-shadow: 5px 10px black; */
-    position:fixed;
-    margin-left: 50px;
-    top: 57px;
+
+#menuToggle input:checked ~ span:nth-last-child(3){
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-#button2{
-    height: 25px;
-    width: 25px;
-    /* box-shadow: 5px 10px black; */
-    position:fixed;
-    margin-left: 25px;
-    top:57px;
-    
+
+#menuToggle input:checked ~ span:nth-last-child(2){
+    transform: rotate(-45deg) translate(0, -1px);
 }
-    /* "id=" uses "#___{}", "class=" uses ".____{}" and tags like <h1> use */
+
+
+/* at the top left of the screen */
+
+#menu{
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li{
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+/*
+slide it in from the left
+*/
+#menuToggle input:checked ~ ul{
+    transform: none;
+}
+
