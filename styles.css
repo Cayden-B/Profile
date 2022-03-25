@@ -4,14 +4,59 @@
     margin: 0px;
 }
 /* navbar============================ */
-.logo{
-    margin-left: 50%;
+nav{
+    text-align: center;
+}
+h1{
     font-family: 'Source Code Pro', monospace;
 }
+h2{
+    font-family: monospace;
+    font-size: large;
+}
 
-.linkdBtn{
+p{
+    font-size: large;
+}
+
+.Btn{
     width: 100px;
     height: 100px;
+    position: sticky;
+    margin-top: 20%;
+}
+
+.container{
+    background-color: aliceblue;
+    position: absolute;
+    top: 400px;
+    width: 100vw;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.buttons{
+    height:100px;
+    width: 100px;
+    margin: 25px;
+    background-color: #232323;
+
+}
+
+.textbox{
+    text-align: center;
+    margin-left:100px;
+    margin-right: 100px;
+}
+
+.text-container{
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    position: absolute;
+    top:150px;
 }
 
 body{
