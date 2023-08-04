@@ -7,6 +7,34 @@
 nav{
     text-align: center;
 }
+
+.logo {
+    position: relative;
+    margin-top: 28px;
+  }
+  
+  .underline {
+    display: inline-block;
+    overflow: hidden;
+    position: relative; /* Added to ensure the pseudo-element is positioned relative to .underline */
+    transition: border-color 0.3s ease; /* Transition the border-color for the underline effect */
+  }
+  
+  .underline::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; /* Customize the height of the underline as needed */
+    background-color: #f80894; /* Change the underline color here */
+    transition: width 0.3s ease; /* Transition the width for the left-to-right effect */
+  }
+  
+  .underline:hover::before {
+    width: 100%; /* Expand the width to create the left-to-right underline effect */
+  }
+
 h1{
     font-family: 'Source Code Pro', monospace;
 }
@@ -77,6 +105,8 @@ body{
     background: #232323;
     color: #cdcdcd;
     font-family: "Avenir Next", "Avenir", sans-serif;
+    position: relative;
+    min-height: 100vh;
 }
 /* burger */
 #menuToggle{
@@ -85,6 +115,7 @@ body{
     top: 30px;
     left: 50px;
     z-index: 1;
+    width: 75px;
 }
 
 #menuToggle a{
@@ -183,3 +214,31 @@ slide it in from the left
     transform: none;
 }
 
+
+
+/* Center the buttons horizontally */
+.footer-items {
+    text-align: center;
+  }
+  
+  /* Styling for the footer buttons */
+  .footer-button{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #232323;
+    border-radius: 25px;
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none; /* Remove text decoration from the buttons */
+    /* border: none; */
+    /* outline: none; */
+  }  
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 5vh;
+    background-color: #232323;
+    width: 100%;
+  }
