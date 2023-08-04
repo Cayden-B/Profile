@@ -32,6 +32,10 @@ function goGithub() {
     window.open("https://github.com/Cayden-B")
 }
 
+function goProject1(){
+  window.open("https://cayden-b.github.io/Webpage-rebuild-1/home.html ")
+}
+
 
 
 
