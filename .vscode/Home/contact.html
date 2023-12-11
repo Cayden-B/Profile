@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="contact.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/47d10f715f.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="script.js" defer></script>
+
+</head>
+
+<body>
+  <nav role="navigation">
+    <div id="menuToggle">
+
+      <input type="checkbox" />
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <ul id="menu">
+        <!-- <a href="#"><li>About</li></a> -->
+        <a href="http://127.0.0.1:5501/.vscode/Home/index.html">
+          <li>Home</li>
+        </a>
+        <a href=>
+          <li>Projects</li>
+        </a>
+
+      </ul>
+    </div>
+    <div class="logo">
+      <div class="underline">
+        <h1>.CB</h1>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="form-container">
+
+
+      <div class="logo">
+        <div class="underline">
+          <h1>Contact me</h1>
+        </div>
+      </div>
+
+      <form id="contactForm" onsubmit="validateForm(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <span id="nameError" class="error"></span>
+
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <span id="emailError" class="error"></span>
+
+        <br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <span id="messageError" class="error"></span>
+
+        <br>
+
+        <input id="submit" type="submit" value="Submit">
+      </form>
+
+
+
+    </div>
+  </main>
+
+  <div class="footer">
+    <div class="footer-items">
+      <div class="footer-button">
+        <button onclick="goLinkd  ()" class="fab fa-brands fa-linkedin-in fa-bounce"
+          style="font-size:36px; background-color: #232323;color: rgb(255, 255, 255); border: none; cursor: pointer;">
+        </button>
+      </div>
+      <div class="footer-button">
+        <button onclick="goGithub() " class="fab fa-brands fa-github"
+          style="font-size:36px; background-color: #232323; color: rgb(255, 255, 255); border: none;cursor: pointer;">
+        </button>
+      </div>
+    </div>
+
+
+
+</body>
+
+</html>
