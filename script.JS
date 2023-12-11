@@ -14,10 +14,7 @@ let goBand = () => {
   window.open("https://cayden-b.github.io/Band-Page/")
 }
 
-let test = () => { 
-  console.log("test")
-}
-
+console.log("Test")
 
 
 function validateForm(event) {
