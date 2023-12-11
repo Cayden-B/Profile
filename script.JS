@@ -16,10 +16,7 @@ let goBand = () => {
 }
 
 
-document.getElementById("webpageRebuild").addEventListener("click", goProject1);
-document.getElementById("bandPage").addEventListener("click", goBand);
-document.getElementById("Linkedin").addEventListener("click", goLinkd);
-document.getElementById("Github").addEventListener("click", goGithub);
+
 
 
 function validateForm(event) {
@@ -56,6 +53,11 @@ function clearErrors() {
   document.getElementById('messageError').innerText = '';
 }
 
+
+document.getElementById("webpageRebuild").addEventListener("click", goProject1);
+document.getElementById("bandPage").addEventListener("click", goBand);
+document.getElementById("Linkedin").addEventListener("click", goLinkd);
+document.getElementById("Github").addEventListener("click", goGithub);
 
 
 
