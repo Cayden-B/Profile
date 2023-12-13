@@ -27,14 +27,14 @@ a{
 
   }
   
-  .underline {
+.underline {
     display: inline-block;
     overflow: hidden;
     position: relative;
     transition: border-color 0.3s ease; 
   }
   
-  .underline::before {
+.underline::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -45,7 +45,7 @@ a{
     transition: width 0.3s ease; 
   }
   
-  .underline:hover::before {
+.underline:hover::before {
     width: 100%; 
   }
 
@@ -123,8 +123,9 @@ p{
     justify-content: center;
     align-items: center;
     width: 100vw;
+    min-height: fit-content;
     position: absolute;
-    top:150px;
+   
 }
 
 body{
