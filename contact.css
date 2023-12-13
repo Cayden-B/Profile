@@ -60,6 +60,10 @@ textarea {
     font-size: 14px;
 }
 
+textarea{
+    min-width: 250px;
+}
+
 .error {
     color: red;
     font-size: 12px;
