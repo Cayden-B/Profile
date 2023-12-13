@@ -48,13 +48,13 @@ let validateForm = (event) => {
 
 
 //clear error messages associated with the 'nameError', 'emailError', 'messageError' fields
-function clearErrors() {
+let clearErrors = () => {
   document.getElementById('nameError').innerText = '';
   document.getElementById('emailError').innerText = '';
   document.getElementById('messageError').innerText = '';
 }
 //clear entries associated with the 'name', 'email', 'message' fields
-function clearEntries(){
+let clearEntries = () => {
   document.getElementById('name').value = "";
   document.getElementById('email').value = "";
   document.getElementById('message').value = "";
@@ -63,7 +63,7 @@ function clearEntries(){
 
 //check valid for submission  ↓
 
-function handleFormSubmission(event) {
+let handleFormSubmission = (event) => {
   if (!validateForm(event)) {
     event.preventDefault();
   } else {
